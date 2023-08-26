@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Loja DECA</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
             </div>
         </nav>
         <nav>
-            <div class="flex flex-row justify-around">
+            <div class="flex flex-row justify-around static">
                 <div>
                     <a href="/">
                         <img src="/media/logo-deca.svg" alt="Logo da marca DECA" style="background-color: rgb(219, 199, 154);" class="mx-30 my-4 py-6 px-4 rounded-md hover:scale-105 ease-in duration-300">
@@ -60,19 +61,51 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                           </svg>
                     </button>
-                    
                 </div>
-
-
             </div>
+                <!-- carrossel de textos -->
+                <div class="static" id="container_text">
+                    <div class="font-semibold" id="text">
+                        <span id="text1">Frete Grátis em produtos selecionados</span>
+                        <span id="text2">CASACOR 2023, descubra as tendências do ano</>
+                        <span id="text3">Celebre o dia dos pais com a Deca </span>
+                    </div>
+                </div>
         </nav>
     </header>
     <main>
+        <!-- Página de carrossel -->
+        <section class="flex justify-center">
+            <div class="flex flex-col">
+                <!-- carrossel de imagens -->
+                <div id="container_img">
+                    <div id="img">
+                        <img src="/media/image-carrossel(1).webp" alt="" >
+                        <img src="/media/image-carrossel(2).webp" alt="" >
+                        <img src="/media/image-carrossel(3).webp" alt="" >
+                        <img src="/media/image-carrossel(4).webp" alt="" >
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <h1 class="font-semibold text-4xl flex justify-center p-16">Conheça os produtos selecionados para você!</h1>
+            <div class="flex flex-row justify-center gap-16 mb-28">
+                <a href="/"><img src="/media/image-assentos_sanitarios.webp" alt="" class="rounded-xl"></a>
+                <a href="/"><img src="/media/image-bacias_sanitarias.webp" alt="" class="rounded-xl"></a>
+                <a href="/"><img src="/media/image-torneiras_para_cozinha.webp" alt="" class="rounded-xl"></a>
+                <a href="/"><img src="/media/image-chuveiros_e_duchas.webp" alt="" class="rounded-xl"></a>
+                <a href="/"><img src="/media/image-cubas_para_banheiro_e_lavabo.webp" alt="" class="rounded-xl"></a>
+                <a href="/"><img src="/media/image-kits.webp" alt="" class="rounded-xl"></a>
+            </div>
+        </section>
     </main>
     <footer>
-
+        
     </footer>
+        <script src="/script.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
 </body>
-  <script src="https://cdn.tailwindcss.com"></script>
+      
 </html>

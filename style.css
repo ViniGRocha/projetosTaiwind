@@ -1,0 +1,52 @@
+#container_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 550px;
+  width: 1366px;
+}
+
+#img{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+#img img{
+  object-fit:contain;
+  height: 600px;
+  width: 1366px;
+}
+
+#container_text{
+  display: flex;
+  flex-direction:column;
+  padding-top:5px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 35px;
+  width:100%;
+  background-color: rgb(219, 199, 154);
+}
+
+#text{
+  display: flex;
+  text-align: center;
+  justify-self: center;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+#text p{
+  object-fit: cover;
+  display: flex;
+  flex-direction:column;
+  margin-left: 100px;
+}
+
+
+
+
+
